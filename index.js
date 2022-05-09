@@ -14,8 +14,8 @@ function adviceGenerator() {
 function displayAdvice(data){
     let adviceData = data.slip;
     
-    document.querySelector(".advice_number").textContent = "Advice #" + adviceData.id;
-    document.querySelector(".advice_content").textContent = "\"" + adviceData.advice + "\"";
+    document.querySelector(".advice_number").textContent = `Advice #${adviceData.id}`;
+    document.querySelector(".advice_content").textContent = `"${adviceData.advice}"`;
 }
 
 window.addEventListener("load", adviceGenerator);
